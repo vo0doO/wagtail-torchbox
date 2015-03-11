@@ -69,7 +69,7 @@
     }
 
     header nav li a:hover {
-        color: #F7A42C;
+        color: #FC8977;
         -o-transition: all 0.15s ease;
         -webkit-transition: all 0.15s ease;
         -moz-transition: all 0.15s ease;
@@ -86,15 +86,15 @@
     /*Active*/
 
     .active {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .active a {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .active a:hover {
-        color: #F7A42C;
+        color: #FC8977;
         border-bottom: none;
     }
 
@@ -132,7 +132,7 @@
     }
 
     .nextprev a {
-        background-color: #ea853a;
+        background-color: #FC8977;
         background-repeat: no-repeat;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -200,7 +200,7 @@
     }
 
     .pagination a p:hover {
-        color: #EA853A;
+        color: #FC8977;
     }
 
     /*Homepage*/
@@ -257,7 +257,7 @@
     }
 
     .page-homepage .listing a:hover h3 {
-        color: #ea853a;
+        color: #FC8977;
     }
 
     .page-homepage .logo {
@@ -586,11 +586,11 @@
     }
 
     .page-workindexpage header nav li a:hover {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-workindexpage header nav li.active a {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-workindexpage section.work {
@@ -1161,11 +1161,11 @@
     }
 
     .page-personindexpage header nav li a:hover {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-personindexpage header nav li.active a {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .grid.people-list li div {
@@ -1184,7 +1184,7 @@
     }
 
     .page-personpage .blog-listing li:hover {
-        background: rgba(250, 249, 245, 1);
+        background: rgba(247, 205, 121,0.1);;
     }
 
     .page-personpage .bleed {
@@ -1196,11 +1196,11 @@
     }
 
     .page-personpage header nav li a:hover {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-personpage header nav li.active a {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-personpage main img {
@@ -1301,7 +1301,7 @@
     }
 
     .page-servicespage .services li:hover:before {
-        color: #EA853a;
+        color: #FC8977;
         -o-transition: all 0.15s ease;
         -webkit-transition: all 0.15s ease;
         -moz-transition: all 0.15s ease;
@@ -1329,11 +1329,11 @@
     }
 
     .page-blogpage  header nav li a:hover {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-blogpage  header nav li.active a {
-        color: #F7A42C;
+        color: #FC8977;
     }
 
     .page-blogpage .next {
@@ -1506,7 +1506,7 @@
         transition: all 0.15s ease;
         height: 100px;
         float: left;
-        fill: #EA853A;
+        fill: #FC8977;
         width: 68px;
         margin-top: -25px;
         padding-bottom: 1em;
@@ -1611,7 +1611,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        background: #EA853a;
+        background: #FC8977;
         color: #fff;
         padding: 0.3em 0.8em 0.3em 1em;
         border-radius: 3px;
@@ -1808,8 +1808,8 @@
         max-width: 200px;
         text-align: center;
         padding: 1em 1.5em;
-        border: solid 1px #EA853a;
-        color: #EA853a;
+        border: solid 1px #FC8977;
+        color: #FC8977;
         margin: 0;
         line-height: 1em;
         border-radius: 0.2em;
@@ -1827,9 +1827,9 @@
     }
 
     .page-homepage .go:hover {
-        border: solid 1px #EA853a;
+        border: solid 1px #FC8977;
         color: #fff;
-        background: #EA853a;
+        background: #FC8977;
     }
 
     .page-homepage .block:hover .go {
@@ -1852,7 +1852,7 @@
         -webkit-transition: 0.2s ease;
         -moz-transition: 0.2s ease;
         transition: 0.2s ease;
-        color: #ea853a;
+        color: #FC8977;
     }
 
     .page-homepage .block .workcontainer {

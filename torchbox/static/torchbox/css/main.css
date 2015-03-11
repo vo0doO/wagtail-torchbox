@@ -141,7 +141,7 @@ button, .button {
     text-decoration: none;
     border: none;
     color: #fff;
-    background-color: #EA853a;
+    background-color: #FC8977;
     display: inline-block;
     line-height: 1em;
     -webkit-border-radius: 0.2em;
@@ -208,7 +208,7 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: #EA853a;
+    color: #FC8977;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -247,7 +247,7 @@ main nav li a {
 }
 
 main nav li.active a {
-    color: #EA853a;
+    color: #FC8977;
     position: relative;
 }
 
@@ -255,7 +255,7 @@ main nav li.active a:after {
     height: 0;
     width: 0;
     position: absolute;
-    border-top: 10px solid #EA853a;
+    border-top: 10px solid #FC8977;
     border-bottom: 1em solid transparent;
     border-left: 0.75em solid transparent;
     border-right: 0.75em solid transparent;
@@ -286,8 +286,8 @@ main nav li.active a:after {
     margin: 0 auto;
     padding: 1.3em 3em;
     background-color: transparent;
-    border: solid 1px #EA853a;
-    color: #EA853a;
+    border: solid 1px #FC8977;
+    color: #FC8977;
     line-height: 1em;
     -webkit-border-radius: 0.2em;
     -moz-border-radius: 0.2em;
@@ -303,8 +303,8 @@ main nav li.active a:after {
 }
 
 .page-homepage .button:hover {
-    background-color: #EA853a;
-    border: solid 1px #EA853a;
+    background-color: #FC8977;
+    border: solid 1px #FC8977;
     color: #fff;
     cursor:pointer;
 }
@@ -332,7 +332,7 @@ main nav li.active a:after {
 }
 
 .body-copy a:hover {
-    color: #ffa624;
+    color: #FB5A40;
     -webkit-transition: color 0.1s ease;
     -moz-transition: color 0.1s ease;
     -o-transition: color 0.1s ease;
@@ -349,8 +349,8 @@ main nav li.active a:after {
 }
 
 .body-copy p a:hover{
-    color: #EA853A;
-    border-bottom: 1px dotted #EA853A;
+    color: #FC8977;
+    border-bottom: 1px dotted #FC8977;
 }
 
 .body-copy h1 {
@@ -446,7 +446,7 @@ main nav li.active a:after {
 }
 
 .menu-button:hover {
-    background-color: #EA853a;
+    background-color: #FC8977;
     color: #fff;
     -o-transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -595,7 +595,7 @@ main nav li.active a:after {
 
 .page-homepage .listing a h2:hover,
 .page-homepage .listing a h3:hover {
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .page-homepage .hero {
@@ -692,7 +692,7 @@ main nav li.active a:after {
     }
 
 .page-homepage .hero em {
-    border-bottom: 0.10em solid #ea853a;
+    border-bottom: 0.10em solid #FC8977;
     font-style: normal;
 }
 
@@ -773,7 +773,7 @@ main nav li.active a:after {
 }
 
 .page-homepage .work li a:hover h3 {
-    color: #EA853a;
+    color: #FC8977;
 }
 
  .page-homepage .container {
@@ -796,11 +796,11 @@ main nav li.active a:after {
 }
 
 .page-homepage h2 a span {
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .page-homepage h2 a:hover {
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .page-homepage h2 a:hover span {
@@ -1068,7 +1068,7 @@ main nav li.active a:after {
 }
 
 .link-inline {
-    color: #EA853A;
+    color: #FC8977;
 }
 .link-inline:hover {
     border-bottom: 1px dotted CurrentColor;
@@ -1133,8 +1133,8 @@ main nav li.active a:after {
     padding: 1.1em 3em;
     line-height: 1em;
     margin: 2em auto 1em auto;
-    color: #EA853a;
-    border: solid 1px #EA853a;
+    color: #FC8977;
+    border: solid 1px #FC8977;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -1144,7 +1144,7 @@ main nav li.active a:after {
 
 .page-standardpage .button:hover {
     cursor: pointer;
-    background-color: #EA853a;
+    background-color: #FC8977;
     color: #fff;
     -o-transition: background-color 0.2s ease;
     -webkit-transition: background-color 0.2s ease;
@@ -1161,8 +1161,8 @@ main nav li.active a:after {
 }
 
 .page-standardpage p a:hover{
-    color: #EA853A;
-    border-bottom: 1px dotted #EA853A;
+    color: #FC8977;
+    border-bottom: 1px dotted #FC8977;
 }
 
 .page-standardpage .logo {
@@ -1217,7 +1217,7 @@ main nav li.active a:after {
 }
 
 .page-standardpage .quote {
-    background-color: #EA853a;
+    background-color: #FC8977;
     color: #fff;
 }
 
@@ -1332,10 +1332,10 @@ main nav li.active a:after {
 }
 
 .pagination .active a {
-    border: 1px solid #EA853a;
+    border: 1px solid #FC8977;
     border: 1px solid rgba(0,0,0,0.2);
     background-color: #fff;
-    color: #EA853a;
+    color: #FC8977;
     }
 
 .index h1 {
@@ -1424,7 +1424,7 @@ main nav li.active a:after {
 }
 
 .page-blogindexpage h2 {
-    color: #ea853a;
+    color: #FC8977;
     max-width: 80%;
 }
 
@@ -1459,7 +1459,7 @@ main nav li.active a:after {
 }
 
 .page-blogindexpage main .block-link:hover {
-    background-color: #FAF9F5;
+    background-color: rgba(247, 205, 121,0.1);
 }
 
 
@@ -1511,7 +1511,7 @@ main nav li.active a:after {
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
     transition: 0.2s ease;
-    color: #ea853a;
+    color: #FC8977;
 }
 
 .page-blogpage .article-meta a:hover {
@@ -1519,7 +1519,7 @@ main nav li.active a:after {
 }
 
 .body-copy a {
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .body-copy p {
@@ -1596,12 +1596,12 @@ main nav li.active a:after {
 }
 
 .popular-tags .filtering {
-    background: #ea853a;
+    background: #FC8977;
     color: white;
 }
 
 .popular-tags .filtering:hover {
-    background: #ea853a;
+    background: #FC8977;
     color: white;
 }
 
@@ -1620,7 +1620,7 @@ main nav li.active a:after {
 
 .popular-tags a.before:hover {
     background: none;
-    color: #ea853a;
+    color: #FC8977;
     position: relative;
 }
 
@@ -1659,8 +1659,8 @@ a.before:before {
 }
 
 .show a:hover {
-    color: #EA853A;
-    border-bottom: 1px dotted #EA853A;
+    color: #FC8977;
+    border-bottom: 1px dotted #FC8977;
     background: transparent;
     padding: 0;
     -webkit-border-radius: 0;
@@ -1836,7 +1836,7 @@ a.tooltip span{
     display: inline-block;
     background: #fff;
     padding: 0.25em 1em;
-    color: #EA853a;
+    color: #FC8977;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1845,14 +1845,14 @@ a.tooltip span{
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    border: 1px solid #EA853a;
+    border: 1px solid #FC8977;
     float: left;
 }
 
 .page-workpage .intro p a:hover {
-    background: #EA853a;
+    background: #FC8977;
     color: #fff;
-    border: 1px solid #EA853a;
+    border: 1px solid #FC8977;
 }
 
 .breadcrumb {
@@ -1867,8 +1867,8 @@ main .breadcrumb a {
     padding: 0.5em 1.5em;
     line-height: 1em;
     margin:0 1em 1em 0;
-    color: #EA853a;
-    border: solid 1px #EA853a;
+    color: #FC8977;
+    border: solid 1px #FC8977;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -1882,7 +1882,7 @@ main .breadcrumb a {
 }
 
 main .breadcrumb a:hover {
-    background-color: #EA853a;
+    background-color: #FC8977;
     display:inline-block;
     color: #fff;
 
@@ -1981,7 +1981,7 @@ main .breadcrumb a:hover {
     font-size: 1.5em;
     margin-top: 0.5em;
     display: block;
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .author .avatar {
@@ -2073,7 +2073,7 @@ main .breadcrumb a:hover {
 }
 
 .body-copy p a:hover{
-    color: #ea853a;
+    color: #FC8977;
 }
 
 .page-personpage main .breadcrumb {
@@ -2102,7 +2102,7 @@ main .breadcrumb a:hover {
 .page-personpage .blog-listing h3 {
     font-size: 1.3em;
     line-height: 1.3em;
-    color: #EA853a;
+    color: #FC8977;
 }
 
 .page-personpage .blog-listing {
@@ -2191,7 +2191,7 @@ main .breadcrumb a:hover {
 }
 
 .grid.people-list li a:hover {
-    background: #EA853A;
+    background: #FB5A40;
 }
 
 .page-personpage h1 {
@@ -2289,12 +2289,12 @@ footer .contact span {
 }
 
 footer .contact a:hover span {
-    color: #EA853a;
+    color: #FC8977;
 }
 
 footer button,
 footer .button {
-    background-color: #EA853a;
+    background-color: #FC8977;
 }
 
 
@@ -2317,7 +2317,7 @@ footer .offices h3 {
 }
 
 footer .offices li:hover h3 {
-    color: #ea853a;
+    color: #FC8977;
 }
 
 footer .offices h2{
@@ -2334,7 +2334,7 @@ footer .vcard {
 }
 
 footer .offices li:hover .vcard{
-    color: #ea853a;
+    color: #FC8977;
 }
 
 footer .tel {
@@ -2475,7 +2475,7 @@ footer .tel {
 
     .pick a:last-of-type {
         margin-right: 0;
-        background: #EA853a;
+        background: #FC8977;
     }
 
     .pick a:last-of-type:hover {
