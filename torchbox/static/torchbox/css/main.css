@@ -491,9 +491,8 @@ main nav li.active a:after {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #000;
-    background-color: rgba(0,0,0,0.7);
-    padding: 1em 1.5em;
+    background-color: rgba(67,74,79,0.9);
+    padding: 0.5em 1em;
     margin-right: 1em;
 }
 .page-homepage .blog-intro {
@@ -513,24 +512,23 @@ main nav li.active a:after {
 
 .blog .label {
     position: absolute;
-    top: 1.5em;
+    top: 2.3em;
     right: auto;
     left: 1em;
     z-index: 1;
+    padding: 0px 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background: rgba(0,0,0,0.3);
+    /*background-color: rgba(67,74,79,0.9);*/
+}
+
+.blog .label p {
+    color: rgba(67,74,79,1);
 }
 
 .label {
-    font-size: 0.9em;
-    position: absolute;
-    top: 138px;
-    left: 0;
-    z-index: 1;
-    padding: 0.1em 0.5em;
-    background: rgba(0,0,0,0.7);
+    font-size: 0.75em;
 }
 
 .label p {
@@ -1077,7 +1075,7 @@ main nav li.active a:after {
 .location{
     padding: 0;
     font-size: 0.7em;
-    color:#97cb9b;
+    color:#82D0D0;
 }
 
 .footerbleed{
@@ -2086,7 +2084,7 @@ main .breadcrumb a:hover {
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
-    color: #97cb9b;
+    color: #82D0D0;
 }
 
 .page-personpage .container {

@@ -415,13 +415,9 @@
         margin: 4em auto 3em auto;
     }
 
-    .page-standardpage header.container {
-        position: absolute;
-        width: 100%;
-    }
-
     .page-standardpage.page-standardpage .heading {
         padding-top: 12em;
+        margin-top: -7em;
     }
 
     .page-standardpage main {
@@ -969,7 +965,7 @@
         max-width: 96em;
         font-size: 5em;
         padding-bottom: 0.3em;
-        color: #97CB9B;
+        color: #82D0D0;
         display: none;
     }
 
@@ -1780,7 +1776,6 @@
     }
 
     .block:hover .label {
-        background: #000;
         margin-top: 0;
     }
 
@@ -1788,7 +1783,7 @@
         display: block;
         left: auto;
         position: absolute;
-        background-color: #000;
+        background-color: rgba(0,0,0,1);
         padding: 1.1em 1.5em 0em 1.5em;
         color:#fff;
         right: 0;
@@ -1799,6 +1794,10 @@
         -webkit-transition: 0.4s ease;
         -moz-transition: 0.4s ease;
         transition: 0.4s ease;
+    }
+
+    .block:hover .label p {
+        color: #82D0D0;
     }
 
     .page-homepage .go {

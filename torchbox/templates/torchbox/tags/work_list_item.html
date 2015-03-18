@@ -8,10 +8,6 @@
                 {% if work.homepage_image %}
                     {% image work.homepage_image fill-764x448 as screenshot %}
 
-                    <div class="label">
-                        <p>Our work</p>
-                    </div>
-
                     <div class="crop-height">
                         <img class="scale" src="{{ screenshot.url }}" width="{{ screenshot.width }}" height="{{ screenshot.height }}" alt="{{ screenshot.alt }}" />
                     </div>
@@ -19,6 +15,9 @@
             </div>
 
             <div class="work-intro">
+                <div class="label">
+                    <p>Our work</p>
+                </div>
                 <h3>{{ work.title }}</h3>
                 {% if work.summary %}
                     <div class="hide">
