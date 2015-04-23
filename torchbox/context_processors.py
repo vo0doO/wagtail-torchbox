@@ -19,7 +19,7 @@ def contact_form(request):
     form = form_class(**form_params)
 
     if request.method == 'POST':
-        if request.POST.get('action', None) == 'join-mailing-list':
+        if request.POST.get('action', None) == 'contact-us':
             form = form_class(request.POST, **form_params)
 
             if form.is_valid():
