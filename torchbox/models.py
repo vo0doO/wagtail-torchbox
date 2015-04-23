@@ -30,14 +30,17 @@ from taggit.models import Tag, TaggedItemBase
 
 from torchbox.utils import export_event
 
-### Streamfield blocks and config ###
+
+#
+# Streamfield blocks and config
+#
 
 class ImageFormatChoiceBlock(FieldBlock):
     field = forms.ChoiceField(choices=(
-        ('left','Wrap left'),
-        ('right','Wrap right'),
-        ('half','Half width'),
-        ('full','Full width'),
+        ('left', 'Wrap left'),
+        ('right', 'Wrap right'),
+        ('half', 'Half width'),
+        ('full', 'Full width'),
     ))
 
 
@@ -100,7 +103,6 @@ class StoryBlock(StreamBlock):
     # photogrid = PhotoGridBlock()
     # testimonial = PullQuoteImageBlock(label="Testimonial", icon="group")
     # stats = StatsBlock()
-
 
 
 COMMON_PANELS = (
@@ -891,6 +893,7 @@ TshirtPage.content_panels = [
 
 class FormField(AbstractFormField):
     page = ParentalKey('FormPage', related_name='form_fields')
+
 
 class FormPage(AbstractEmailForm):
     intro = RichTextField(blank=True)
