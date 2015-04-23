@@ -1,4 +1,4 @@
-{% load torchbox_tags cache compress static wagtailuserbar wagtailimages_tags %}<!DOCTYPE html>
+{% load torchbox_tags cache compress static wagtailuserbar wagtailimages_tags wagtailcore_tags %}<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
@@ -87,6 +87,34 @@
                 <div class="contact container listing">
                     <h2>Say hello</h2>
                     <ul class="footerbleed">
+                    {% if contact_form %}
+                        <li>
+                            <form action="{{ self.url }}" method="post">
+                                {% csrf_token %}
+                                {% if contact_form.is_valid and self.contact_form.thank_you_text %}
+                                    <div class="success">
+                                        {{ self.contact_form.thank_you_text|richtext }}
+                                    </div>
+                                {% endif %}
+                                {% if contact_form.errors %}
+                                    <p class="error">Please check the errors below.</p>
+                                {% endif %}
+                                <input type="hidden" name="action" value="contact-us">
+                                <fieldset>
+                                    {% for field in contact_form %}
+                                        <div class="field-container">
+                                            {% if field.errors %}
+                                                {{ field.errors }}
+                                            {% endif %}
+                                            <label for="{{ field.id_for_label }}">{{ field.label }} {% if field.field.required %}<span class="required">*</span>{% endif %}</label>
+                                            {{ field }}
+                                        </div>
+                                    {% endfor %}
+                                    <button type="submit">Send</button>
+                                </fieldset>
+                            </form>
+                        </li>
+                    {% endif %}
                         <li><a href="mailto:{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@torchbox.com"><i class="icon-mail"></i><span>{% if self|in_play or play_404 %}play{% else %}hello{% endif %}@torchbox.com</span></a></li>
                         <li><a href="tel:+441608811870"><i class="icon-phone"></i><span>+44 (0) 1608 811870</span></a></li>
                         <li><a href="https://twitter.com/{% if self|in_play or play_404 %}playsays{% else %}torchbox{% endif %}"><i class="icon-twitter"></i><span>{% if self|in_play or play_404 %}@PlaySays{% else %}@torchbox{% endif %}</span></a></li>
