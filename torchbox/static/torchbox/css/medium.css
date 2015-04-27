@@ -472,7 +472,8 @@
         margin-top: -10em;
     }
 
-    .page-standardpage .were-tbx {
+    .page-standardpage .were-tbx,
+    .page-formpage .were-tbx {
         padding: 0em 2em 1em 2em;
         background-color: #fff;
         margin: 0 auto 0 auto;
@@ -480,7 +481,8 @@
         position: relative;
     }
 
-    .page-standardpage .were-tbx p {
+    .page-standardpage .were-tbx p,
+    .page-formpage .were-tbx p {
         font-size: 1.25em;
     }
 
@@ -1713,7 +1715,7 @@
     .page-homepage .hero.hero-video {
         margin-bottom: -3em;
     }
-    
+
     .page-homepage .hero {
         margin-bottom: -3em;
     }
@@ -1939,12 +1941,12 @@
    ========================================================================== */
 
 @media only screen and (min-width: 45em) {
-    
+
     .container.stream-field{
         padding:0;
         max-width:none;
     }
-    
+
     .pull-quote {
         padding: 3em;
     }
@@ -2073,8 +2075,8 @@
         .align-left p {
             text-align:right;
         }
-  
-    .align-left .img-holder .credit, 
+
+    .align-left .img-holder .credit,
     .align-right .img-holder .credit {
         max-width: 100%;
     }

@@ -538,6 +538,12 @@ main nav li.active a:after {
     color: #fff;
 }
 
+.page-formpage label {
+    min-width: 8em;
+    float: left;
+
+}
+
 .page-homepage .listing p{
     display: block;
     font-size: 1.1em;
@@ -2756,7 +2762,7 @@ h4 ~ .stat {
     padding: 1em;
 }
 
-/* 
+/*
 
 .screengrab {
     padding: 3em 0 1em;

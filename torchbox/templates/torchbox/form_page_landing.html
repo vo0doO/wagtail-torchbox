@@ -2,12 +2,10 @@
 {% load wagtailcore_tags wagtailimages_tags torchbox_tags %}
 
 {% block content %}
-<main class="page-blog-single single">
-    <section class="container body-copy">
-        {% include "torchbox/includes/breadcrumb.html" %}
+  <section class="container body-copy">
+      {% include "torchbox/includes/breadcrumb.html" %}
 
-        <h1>Thank you</h1>
-        <p>{{ self.thank_you_text|richtext }}</p>
-    </section>
-</main>
+      <h1>Thank you</h1>
+      <p>{{ self.thank_you_text|richtext }}</p>
+  </section>
 {% endblock %}
