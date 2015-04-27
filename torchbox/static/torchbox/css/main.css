@@ -2347,6 +2347,23 @@ footer .tel {
     display: block;
 }
 
+.contact-form {
+    width: 40em;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2em 2em 0;
+}
+.contact-form .field-container {
+    margin-bottom: 0.5em;
+}
+.contact-form label {
+    min-width: 8em;
+    display: inline-block;
+}
+.contact-form button {
+    margin-left: 8.25em;
+}
+
 .map iframe {
     border: 0;
     display: block;
