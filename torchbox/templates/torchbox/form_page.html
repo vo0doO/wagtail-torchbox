@@ -14,12 +14,12 @@
             {% endif %}
             <ul class="fields">
                 {% for field in form %}
-                    <li class="{% if field.field.required %}required{% endif %} {% if field.errors %}errors{% endif %}">
+                    <li class="field-container {% if field.field.required %}required{% endif %} {% if field.errors %}errors{% endif %}">
+                        {{ field }}
+                        <label for="{{ field.id_for_label }}">{{ field.label }} {% if field.field.required %}<span class="required">*</span>{% endif %}</label>
                         {% if field.errors %}
                             {{ field.errors }}
                         {% endif %}
-                        <label for="{{ field.id_for_label }}">{{ field.label }} {% if field.field.required %}<span class="required">*</span>{% endif %}</label>
-                        {{ field }}
                         <div class="form-help">{% if field.help_text %}{{ field.help_text }}{% endif %}</div>
                     </li>
                 {% endfor %}

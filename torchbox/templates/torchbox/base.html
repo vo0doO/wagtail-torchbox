@@ -102,8 +102,8 @@
                                             {% if field.errors %}
                                                 {{ field.errors }}
                                             {% endif %}
-                                            <label for="{{ field.id_for_label }}">{{ field.label }} {% if field.field.required %}<span class="required">*</span>{% endif %}</label>
                                             {{ field }}
+                                            <label for="{{ field.id_for_label }}">{{ field.label }} {% if field.field.required %}<span class="required">*</span>{% endif %}</label>
                                         </div>
                                     {% endfor %}
                                     <button type="submit">Send</button>

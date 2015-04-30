@@ -144,4 +144,26 @@ $(function() {
         e.preventDefault();
         $('.contact-form').slideToggle();
     });
+
+    inputIsNotEmpty();
+
 });
+
+
+
+
+function inputIsNotEmpty() {
+    // Add class to form elements when blurred if they contain content.
+    $(".field-container input, .field-container textarea").on("blur", function() {
+        var el = $(this);
+        var value = el.val().length;
+        if (value > 0) {
+           el.addClass("active-input");
+        } else {
+           el.removeClass("active-input");
+       }
+    });
+    // Blur all form fields on function call to ensure correct handling on
+    // page load.
+    $(".field-container input, .field-container textarea").blur();
+}
