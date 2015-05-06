@@ -10,9 +10,9 @@ def fb_app_id(request):
 
 
 def contact_form(request):
-    form_page = FormPage.objects.get(slug='contact-us')
+    form_page = FormPage.objects.filter(slug='contact-us').first()
     if not form_page:
-        return
+        return {}
 
     form_class = form_page.form_builder(form_page.form_fields.all()).get_form_class()
     form_params = form_page.get_form_parameters()

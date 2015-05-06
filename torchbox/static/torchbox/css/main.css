@@ -543,7 +543,7 @@ main nav li.active a:after {
     float: left;
 }
 .page-formpage form li {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .page-homepage .listing p{
@@ -2350,11 +2350,14 @@ footer .tel {
 }
 
 .contact-form {
-    width: 40em;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
-    padding: 2em 2em 0;
+    padding: 1em;
+    border-bottom: 1px dotted #666;
+    border-bottom: 1px dotted rgba(255,255,255,0.2);
 }
+
 form .field-container {
     margin-bottom: 0.5em;
     position: relative;
@@ -2363,7 +2366,7 @@ form label {
     position: absolute;
     top: 8px;
     left: 10px;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #c0bfba;
     z-index: 1;
 
@@ -2374,7 +2377,7 @@ form input:not([type="submit"]),
 form textarea {
     position: relative;
     margin: 0;
-    padding: 25px 10px 5px 10px;
+    padding: 10px 10px 5px 10px;
     width: 100%;
     border: none;
     line-height: 20px;
@@ -2382,8 +2385,8 @@ form textarea {
     background-color: transparent;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #999;
-    border-radius: 5px;
-    font-size: 25px;
+    border-radius: 3px;
+    font-size: 15px;
     line-height: 25px;
 }
 .contact-form input,
@@ -2400,7 +2403,7 @@ form input.active-input + label,
 form input:focus + label,
 form textarea.active-input + label,
 form textarea:focus + label {
-    top: 8px;
+    top: 2px;
     font-size: 13px;
     color: #EA853A;
 }
@@ -2836,6 +2839,112 @@ h4 ~ .stat {
     margin: 0;
     padding: 1em;
 }
+
+/* ==========================================================================
+    CONTACT US
+========================================================================== */
+
+.block-colour {
+    background: #EA853a;
+    padding: 21em 0 2em;
+    margin: -19em 0 2em;
+}
+
+.block-colour h1 {
+    color: #fff;
+    margin-bottom: 0.25em;
+}
+
+.page-formpage .logo {
+      background-image: url("/static/torchbox/images/logo-torchbox-white.png");
+}
+
+input {
+  font-family: 'proxima-nova', helvetica, sans-serif;
+}
+
+.page-formpage h4 {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 0.25em;
+}
+
+.page-formpage h4 span {
+    border-right: 2px solid #fff;
+    padding: 0 0.5em 0 0;
+    margin: 0 0.5em 0 0;
+}
+
+.page-formpage h4 span:last-of-type {
+    border-right: none;
+}
+
+.page-formpage p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+/* contact us landing */
+.thank-you-header {
+    background: url("/static/torchbox/images/bristol-office.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -19em;
+    padding-bottom: 8em;
+}
+
+h1.center {
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+} 
+
+.dark p {
+    color: #434a4f;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: #fff;
+    position: relative;
+}
+
+.thank-content {
+    padding: 25em 0 1em 0;
+    position: relative;
+}
+
+.thank-content:after {
+    content: '';
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thank-btn {
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.thank-btn .button {
+    background: white;
+    color: #EA853a;
+    margin-right: 0.5em;
+}
+
+.thank-btn .button:hover {
+    background: #434a4f;
+    color: #fff;
+}
+
 
 /*
 

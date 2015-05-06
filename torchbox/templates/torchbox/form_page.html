@@ -2,10 +2,29 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 
 {% block content %}
-    <section class="body-copy">
-        <h1>{{ self.title }}</h1>
-        {{ self.intro|richtext }}
-    </section>
+
+<div class="block-colour">
+
+    <div class="container">
+        <section class="body-copy">
+            <h1>{{ self.title }}</h1>
+            {{ self.intro|richtext }}
+
+            <h4>
+                <span>Strategy </span>
+                <span>UX</span>
+                <span>Design</span>
+                <span>Animation</span>
+                <span>Implementation</span>
+            </h4>
+            <p>Take your pick. Mix and match.</p>
+
+        </section>
+    </div>
+
+</div>
+
+<div class="container">
     <section class="were-tbx">
         <form action="{% pageurl self %}" method="POST">
             {% csrf_token %}
@@ -29,4 +48,5 @@
             </ul>
         </form>
     </section>
+</div>
 {% endblock %}

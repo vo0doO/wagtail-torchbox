@@ -1273,6 +1273,39 @@
         background-color: transparent;
     }
 
+    /*page formpage*/
+    
+    .block-colour {
+        background: #EA853a;
+        padding: 18em 0 2em;
+        margin: -19em 0 2em;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    form input:not([type="submit"]),
+    form textarea {
+        padding: 23px 10px 5px 10px;
+        font-size: 22px;
+    }
+
+    form input.active-input + label,
+    form input:focus + label,
+    form textarea.active-input + label,
+    form textarea:focus + label {
+        top: 8px;
+    }
+
+    .contact-form {
+        width: 40em;
+        margin: 0 auto;
+        text-align: left;
+        padding: 2em 2em 0;
+        border: none;
+    }
+
     /*Services page*/
 
     .page-servicespage .services-intro {
@@ -1411,6 +1444,25 @@
         margin-top: 0em;
         background: rgb(249, 249, 249);
         padding-top: 1em;
+    }
+
+    /*thank you*/
+    .thank-you-header {
+        margin-top: -9em;
+        padding-bottom: 17em;
+        padding-top: 5em;
+    }
+
+    .thank-content {
+        padding: 12em 0 1em 0;
+    }
+
+    h1.center {
+        font-size: 5em;
+    } 
+
+    .dark p {
+        font-size: 1.5em;
     }
 
     /*Footer*/
