@@ -2856,11 +2856,11 @@ h4 ~ .stat {
 }
 
 .page-formpage .logo {
-      background-image: url("/static/torchbox/images/logo-torchbox-white.png");
+    background-image: url("/static/torchbox/images/logo-torchbox-white.png");
 }
 
 input {
-  font-family: 'proxima-nova', helvetica, sans-serif;
+    font-family: 'proxima-nova', helvetica, sans-serif;
 }
 
 .page-formpage h4 {
@@ -2901,7 +2901,7 @@ h1.center {
     font-size: 3em;
     color: #fff;
     font-weight: bold;
-} 
+}
 
 .dark p {
     color: #434a4f;
