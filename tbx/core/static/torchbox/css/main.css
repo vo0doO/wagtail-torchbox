@@ -3093,6 +3093,12 @@ h4 ~ .stat {
 }
 
 /* header */
+
+.page-standardpage .logo {
+    background: url("../images/logo-torchbox-white.png") center left no-repeat;
+    background-size: 13em;
+}
+
 .about-header {
     position: relative;
     display: block;
@@ -3277,9 +3283,9 @@ h4 ~ .stat {
 
 .clients-holder {
     background: #434A4E;
-    padding: 7% 0 0;
-    -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding: 9% 0 0;
+    -webkit-clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
 .clients-holder h3 {
@@ -3321,19 +3327,19 @@ h4 ~ .stat {
     height: 150%;
 }
 
-.clients-big li:nth-child(2n) {
+.clients-big a:nth-child(2n) li {
     background: rgba(255,255,255, 0.04);
 }
 
-.clients-big li:nth-child(5) {
+.clients-big a:nth-child(5) li {
     background: rgba(255,255,255, 0.04);
 }
 
-.clients-big li:nth-child(6), .clients-big li:nth-child(8) {
+.clients-big a:nth-child(6) li, .clients-big a:nth-child(8) li {
     background: transparent;
 }
 
-.clients-big li:nth-child(7) {
+.clients-big a:nth-child(7) li {
     background: rgba(255,255,255, 0.04);
 }
 
