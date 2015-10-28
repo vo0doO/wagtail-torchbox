@@ -1,55 +1,298 @@
 {% extends "torchbox/base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags humanize static %}
 
 {% block content %}
-    {% if self.main_image %}
-        {% image self.main_image fill-1300x750 as header_image %}
-        <style>
-            .heading {
-                background-image: url('{{ header_image.url }}');
-            }
-        </style>
-    {% endif %}
-    <div class="heading">
-        {{ self.heading|richtext }}
+    <div class="about-page">
+        
+        <div class="about-header">
+            <div class="content">
+                <h1>We work with people who are trying to make the world a better place. People who share our values.</h1>
+                <div class="button">
+                    <a href="">Get in touch</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content-main">
+            <!-- What we do -->
+            <div class="content">
+                <h2>What we do</h2>
+                <p class="intro">
+                    We design and build beautiful websites for some of the world’s great universities and academic institutions, globally-renowned think tanks, fundraising charities, campaigning NGOs, research programmes, and leading membership organisations, powered by open source content management systems including Drupal and our very own Wagtail CMS.
+                </p>
+                <ul class="specialisms">
+                    <li>
+                        <div class="img-wrapper clearfix">
+                            <img src="{% static "torchbox/images/icons/about/jigsaw.svg" %}" />
+                        </div>
+                        <h3>Bespoke Solutions</h3>
+                        <p>Sometimes only a bespoke solution will do, and that's fine too. Our custom software engineering team use Django to build robust, scalable web applications for mission critical requirements such as management.</p>
+                    </li>
+                    <li>
+                        <div class="img-wrapper">
+                            <img src="{% static "torchbox/images/icons/about/mic.svg" %}" />
+                        </div>
+                       <h3>Digital Marketing</h3>
+                       <p>We've got digital marketing covered too. We can manage your social media channels, tell your story to a wider audience, generate new content ideas, and optimize your Google Grant. Just ask.</p> 
+                    </li>
+                    <li>
+                        <div class="img-wrapper">
+                            <img src="{% static "torchbox/images/icons/about/design.svg" %}" />
+                        </div>
+                        <h3>Design and animation</h3>
+                        <p>Sometimes only a bespoke solution will do, and that's fine too. Our custom software engineering team use Django to build robust, scalable web applications for mission critical requirements such as management.</p> 
+                    </li>
+                    <li>
+                        <div class="img-wrapper">
+                            <img src="{% static "torchbox/images/icons/about/ux.svg" %}" />
+                        </div>
+                        <h3>UX</h3>
+                        <p>We've got digital marketing covered too. We can manage your social media channels, tell your story to a wider audience, generate new content ideas, and optimize your Google Grant. Just ask.</p> 
+                    </li>
+                </ul>
+                <p class="intro">And we want our clients to see the best possible return on their investment. Close collaboration and an agile and flexible approach mean we can respond and adapt to evolving requirements as we work towards a Minimum Viable Product, without breaking the bank.</p>
+            </div>
+
+            <!-- Carousel -->
+            <div class="carousel">
+                <img src="{% static "torchbox/images/about-carousel.jpg" %}"  width="" height="" alt="">
+            </div>
+            <div class="content">
+                <p class="intro">And we want our clients to see the best possible return on their investment. Close collaboration and an agile and flexible approach mean we can respond and adapt to evolving requirements as we work towards a Minimum Viable Product, without breaking the bank.</p>
+                <div class="split"></div>
+            </div>
+
+            <!-- offices -->
+            <div class="content">
+                <section class="jobs-offices clearfix">
+                    <div class="center our-offices-container">
+                        <h3>Our offices</h3>
+                        <ul class="our-offices">
+                            <li class="cotswolds first">
+                            <img src="{% static "torchbox/images/icons/cotswolds.svg" %}" />
+                                <h3>In the glorious Cotswolds</h3>
+                                <p>Have lunch by the river at our head office in a beautiful Oxfordshire deer park, or take long walks along the river.</p>
+                            </li>
+                            <li class="bristol">
+                            <img src="{% static "torchbox/images/icons/bristol.svg" %}" />
+                                <h3>The vibrant centre of Bristol</h3>
+                                <p>Go out with the team to try the endless supply of real ales, or try the abundance of street food and site in the vibrant parks.</p>
+                            </li>
+                            <li class="remote last">
+                            <img src="{% static "torchbox/images/icons/space.svg" %}" />
+                                <h3>Where you live</h3>
+                                <p>Not near us but want to work with us?</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="split"></div>
+                </section>
+            </div>
+            
+            <!-- core values -->
+            <div class="content">
+                <section class="jobs-core-values clearfix">
+                    <div class="center">
+                        <h3>Our four core values</h3>
+                        <ul>
+                            <li>
+                                <img src="{% static "torchbox/images/corevalue-better.jpg" %}" alt="Make things better" />
+                            </li>
+                            <li class="rh">
+                                <img src="{% static "torchbox/images/corevalue-happy.jpg" %}" alt="Make clients happy" />
+                            </li>
+                            <li>
+                                <img src="{% static "torchbox/images/corevalue-never.jpg" %}" alt="Never stand still" />
+                            </li>
+                            <li class="rh">
+                                <img src="{% static "torchbox/images/corevalue-enjoy.jpg" %}" alt="Enjoy it" />
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Our history -->
+            <section class="jobs-benefits clearfix" id="reasons">
+                <div class="center">
+                    <h3>Our History in ten steps</h3>
+                </div>
+                <div class="jobs-carousel-container">
+                    <ul class="jobs-carousel">
+                        <li>
+                            <img src="{% static "torchbox/images/jobs-team-carousel.jpg" %}"  width="" height="" alt="">
+                            <div class="slide-caption-container">
+                                <span class="reason-no">Step one</span>
+                                <p>Our first ski Trip</p>
+                                <div class="slick-buttons"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{% static "torchbox/images/jobs-team-carousel.jpg" %}"  width="" height="" alt="">
+                            <div class="slide-caption-container">
+                                <span class="reason-no">Step two</span>
+                                <p>Vivamus sagittis lacus vel augue.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{% static "torchbox/images/jobs-team-carousel.jpg" %}"  width="" height="" alt="">
+                            <div class="slide-caption-container">
+                                <span class="reason-no">Step three</span>
+                                <p>Fusce dapibus sit amet risus</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{% static "torchbox/images/jobs-team-carousel.jpg" %}"  width="" height="" alt="">
+                            <div class="slide-caption-container">
+                                <span class="reason-no">Step four</span>
+                                <p>Etiam porta euismod</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{% static "torchbox/images/jobs-team-carousel.jpg" %}"  width="" height="" alt="">
+                            <div class="slide-caption-container">
+                                <span class="reason-no">Step five</span>
+                                <p>Aenean lacinia bibendum nulla sed consectetur</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Clients -->
+            <div class="clients-holder">
+                <h3>We're proud to have worked with</h3>
+
+                <ul class="clients-big">
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/beam.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/ca.png" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/ch.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/crt.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/global-witness.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/ox.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/rca.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/rds.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/rnib.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/wagggs.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/wrap.svg" %}" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="client-logo">
+                            <img src="{% static "torchbox/images/icons/about/logo/wwf.svg" %}" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Involved in -->
+            <div class="involved-holder">
+                <div class="content">
+                    <h3>Things we're involved in</h3>
+                    <ul class="involved-in">
+                        <li>
+                            <div class="involved-img-wrapper">
+                                <img src="{% static "torchbox/images/icons/about/geek.svg" %}" />
+                            </div>
+                            <h3>Oxford Geek Nights</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                        </li>
+                        <li>
+                            <div class="involved-img-wrapper">
+                                <img src="{% static "torchbox/images/icons/about/conf.svg" %}" />
+                            </div>
+                            <h3>Conferences</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                        </li>
+                        <li>
+                            <div class="involved-img-wrapper">
+                                <img src="{% static "torchbox/images/icons/about/wagtail.svg" %}" />
+                            </div>
+                            <h3>Wagtail</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                        </li>
+                        <li>
+                            <div class="involved-img-wrapper">
+                                <img src="{% static "torchbox/images/icons/about/drupal.svg" %}" />
+                            </div>
+                            <h3>Drupal</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Like what you've seen? -->
+            <div class="call-to-action-bg">
+            <div class="content">
+                <h3>Like what you’ve seen?</h3>
+                <div class="action-holder">
+                    <ul class="action">
+                        <li>
+                            <h3>Work with us</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                            <a href=""><div class="button">Send us an email</div></a>
+                        </li>
+                        <li>
+                            <h3>Join our team</h3>
+                            <p>Scenester hella Echo Park, church-key taxidermy ethical yr bespoke sartorial bicycle rights drinking vinegar.</p>
+                            <a href=""><div class="button">Current opportunies</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+{% endblock %}
 
-    <div class="coloured-background">
-        <div class="italic">
-            <p class="hangingindent"> &#8220; {{ self.quote }}&#8221; </p>
-        </div>
-    </div>
-
-    <section class="intro were-tbx container">
-        {{ self.intro|richtext }}
-    </section>
-
-    <div class="quote">
-        <div class="dark">
-            {{ self.middle_break|richtext }}
-        </div>
-    </div>
-
-    <section class="intro were-tbx container">
-        {{ self.body|richtext }}
-    </section>
-
-    {% include "torchbox/includes/streamfield.html" %}
-
-    <section class="container">
-        <div class="clients">
-            <h2 class="play-no">Some of our clients</h2>
-            <h2 class="tbx-no">We're proud to have worked with</h2>
-            <ul>
-                {% for client in self.clients.all %}
-                    <li>{% if client.link %}<a href="{{ client.link }}">{% endif %}{% image client.image max-250x80 %}{% if client.link %}</a>{% endif %}</li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="button play-no">
-            <a href="mailto:{{ self.email }}">Get in touch</a>
-        </div>
-    </section>
-
+{% block extra_js %}
+    <script src="{% static "torchbox/js/vendor/jquery.matchHeight-min.js" %}" type="text/javascript"></script>
+    <script src="{% static "torchbox/js/vendor/slick/slick.min.js" %}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "torchbox/js/vendor/slick/slick.css" %}"/>
+    <script src="{% static "torchbox/js/jobs.js" %}" type="text/javascript"></script>
 {% endblock %}

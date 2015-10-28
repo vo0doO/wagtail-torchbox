@@ -410,7 +410,7 @@
         text-indent: -13px ;
     }
 
-    .page-standardpage .button {
+    /*.page-standardpage .button {
         margin: 4em auto 3em auto;
     }
 
@@ -437,7 +437,7 @@
     }
 
     .page-standardpage main li {
-        margin-bottom: 2em;
+        margin-bottom: 2%;
     }
 
     .page-standardpage .hero {
@@ -572,7 +572,7 @@
     .page-standardpage .grid li:nth-child(3n+4) {
         clear: none;
     }
-
+*/
 
     /*Work index*/
 
@@ -753,7 +753,7 @@
     }
 
     .jobs-core-values li {
-        width: 48%;
+        width: 49%;
         float: left;
         margin: 0 1% 2% 0;
         border-top: none;
@@ -1942,7 +1942,7 @@
         overflow: hidden;
     }
 
-    .page-standardpage h2 {
+    /*.page-standardpage h2 {
         font-weight: bold;
         font-size: 4em;
         max-width: 1000px;
@@ -1950,7 +1950,7 @@
 
     .page-standardpage h2 {
         max-width: 12em;
-    }
+    }*/
 
     .page-homepage .grid li img {
         float: left;
@@ -2394,10 +2394,10 @@
         margin: 1.5em auto 1.5em auto;
     }
 
-    .page-standardpage h2 {
+/*    .page-standardpage h2 {
         margin: 0 auto;
         font-size: 4em;
-    }
+    }*/
 
     .page-homepage .work-intro {
         padding: 4em 0 0 3em;

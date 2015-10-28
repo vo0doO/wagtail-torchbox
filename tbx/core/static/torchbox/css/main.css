@@ -1364,7 +1364,7 @@ main nav li.active a:after {
     padding: 0.5em;
 }
 
-.page-standardpage h4 {
+/*.page-standardpage h4 {
     color: #434a4f;
     font-size: 1.1em;
     text-align: center;
@@ -1466,7 +1466,7 @@ main nav li.active a:after {
 
 .page-standardpage  p i{
     font-size: 1.1em;
-}
+}*/
 
 .italic{
     line-height: 1.5em;
@@ -1478,7 +1478,7 @@ main nav li.active a:after {
     font-style: italic;
 }
 
-.page-standardpage main {
+./*page-standardpage main {
     padding: 0;
 }
 
@@ -1557,7 +1557,7 @@ main nav li.active a:after {
 .page-standardpage .listing li img {
     display: block;
 }
-
+*/
 /*Services page*/
 
 .page-servicespage .services-intro {
@@ -3083,6 +3083,390 @@ h4 ~ .stat {
 }
 
 */
+
+/* ==========================================================================
+   NEW ABOUT PAGE
+   ========================================================================== */
+
+.about-page {
+    
+}
+
+/* header */
+.about-header {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: -8em 0 5em;
+    color: white;
+    background-image: url('../images/job-page-about.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /**/
+    min-height: 621px;
+    text-align: center;
+    z-index: 10;
+}
+
+.about-content-main {
+    position: relative;
+    background: white;
+    z-index: 100;
+    -webkit-clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding-top: 8em;
+    margin-top: -9.5em;
+}
+
+.about-header h1 {
+    font-size: 3.75em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 0 0 30px;
+    text-shadow: 0px 0px 25px rgba(0,0,0, 0.45);
+}
+
+.about-header .content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 830px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 15%;
+}
+
+.about-header:after {
+    content: '';
+    position: absolute;
+    z-index: 5;
+    background: rgba(0,0,0,0.25);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.about-page .button {
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+/* What we do */
+.content {
+    padding: 0 1em;
+    max-width: 96em;
+    margin: 0 auto;
+}
+
+.about-page h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    color: #484848;
+    text-align: center;
+}
+
+.about-page h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.75em;
+    color: #484848;
+    text-align: center;
+}
+
+.about-page p.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2em;
+    font-size: 1.45em;
+    line-height: 1.4;
+}
+
+.specialisms {
+    overflow: hidden;
+    max-width: 1050px;
+    margin: 1em auto 3em;
+}
+
+.specialisms li {
+    width: 45%;
+    margin: 0 9.5% 2em 0;
+    float: left;
+    text-align: center;
+}
+
+.specialisms li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.specialisms .img-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    height: 120px;
+    /* doesn't matter gets capped*/
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.specialisms .img-wrapper img {
+    display: inline-block;
+    max-width: 65px;
+}
+
+.specialisms h3 {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin: 0 0 5px;
+}
+
+.specialisms p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Carousel */
+
+.carousel {
+    margin-bottom: 3em;
+}
+
+/* history */
+
+.about-page .our-offices {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Split */
+
+.split {
+    height: 1px;
+    width: 95%;
+    background: rgba(0,0,0,0.15);
+    margin: 4em auto 4em;
+}
+
+/* Jobs */
+
+.about-page .jobs-core-values h3 {
+    margin-bottom: 1.25em;
+}
+
+.about-page .jobs-benefits h3 {
+    text-align: left;
+    font-size: 3.25em;
+    margin: 1em 0 0.25em;
+} 
+
+.about-page .jobs-carousel-container {
+    margin-bottom: 2em;
+}
+
+/* clients */
+
+.clients-holder {
+    background: #434A4E;
+    padding: 7% 0 0;
+    -webkit-clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.clients-holder h3 {
+    color: white;
+}
+
+.clients-big {
+    overflow: hidden;
+}
+
+.clients-big li {
+    position: relative;
+    width: 25%;
+    float: left;
+    height: 300px;
+    overflow: hidden;
+}
+
+.clients-big li:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    background: #7FCFD0;
+    width: 0;
+    height: 0;
+    -o-transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.clients-big li:hover:after {
+    width: 150%;
+    height: 150%;
+}
+
+.clients-big li:nth-child(2n) {
+    background: rgba(255,255,255, 0.04);
+}
+
+.clients-big li:nth-child(5) {
+    background: rgba(255,255,255, 0.04);
+}
+
+.clients-big li:nth-child(6), .clients-big li:nth-child(8) {
+    background: transparent;
+}
+
+.clients-big li:nth-child(7) {
+    background: rgba(255,255,255, 0.04);
+}
+
+.clients-big li .client-logo {
+    position: relative;
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    height: 300px;
+    /* doesn't matter gets capped*/
+    width: 700px;
+}
+
+.clients-big li img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* involved */
+.involved-holder {
+    background: #FD5938;
+    padding: 5em 0 10em;
+}
+
+.involved-holder h3 {
+    color: white;
+}
+
+.involved-in {
+    overflow: hidden;
+    margin: 4em 0 0;
+}
+
+.involved-in h3, .involved-in p {
+    color: white;
+}
+
+.involved-in h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.involved-in p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-top: 5px;
+}
+
+.involved-in li {
+    width: 21.2%;
+    float: left;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.involved-in li:last-of-type {
+    margin-right: 0;
+}
+
+.involved-img-wrapper {
+    position: relative;
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    height: 120px;
+    /* doesn't matter gets capped*/
+    width: 700px;
+}
+
+.involved-img-wrapper img {
+    max-width: 100px;
+    max-height: 70px;
+}
+
+/* call to action */
+.call-to-action-bg {
+    background: #F8F8F8;
+    -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
+    padding: 7em 0 4em;
+    margin-top: -60px;
+}
+
+.action-holder {
+    text-align: center;
+    margin: 5em 0 2em;
+}
+
+.action {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.action h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.action p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.action li {
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin-right: 20%;
+}
+
+.action li:last-of-type {
+    margin-right: 0;
+}
+
+.action .button {
+    background: transparent;
+    border: 1px solid #434A4E;
+    color: #434A4E;
+}
+
+.action .button:hover {
+    background: #FD5938;
+    color: white;
+    border-color: #FD5938;
+}
+
 
 
 /* ==========================================================================
