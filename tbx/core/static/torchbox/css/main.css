@@ -1219,7 +1219,7 @@ main nav li.active a:after {
 }
 
 .page-jobindexpage img.scale {
-    
+
 }
 
 .page-jobindexpage .crop-height {
@@ -3059,7 +3059,7 @@ h4 ~ .stat {
    ========================================================================== */
 
 .about-page {
-    
+
 }
 
 /* header */
@@ -3085,25 +3085,23 @@ h4 ~ .stat {
     position: relative;
     display: block;
     overflow: hidden;
-    margin: -19em 0 5em;
+    margin: -4em 0 5em;
     color: white;
     background-image: url('../images/about-header-new-sml.jpg');
     background-repeat: no-repeat;
-    /**/
-    min-height: 700px;
+    background-size: cover;
+    background-position: 100% 20%;
+    -webkit-clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    min-height: 360px;
     text-align: center;
     z-index: 10;
-    background-size: cover;
 }
 
 .about-content-main {
     position: relative;
     background: white;
     z-index: 100;
-    -webkit-clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0 100%, 0 0);
-    clip-path: polygon(50% 1%, 100% 0, 100% 100%, 0 100%, 0 0);
-    padding-top: 8em;
-    margin-top: -9.5em;
 }
 
 .about-header h1 {
@@ -3124,7 +3122,7 @@ h4 ~ .stat {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 10%;
+    top: 6em;
 }
 
 .about-header:after {
@@ -3253,7 +3251,7 @@ h4 ~ .stat {
     text-align: center;
     font-size: 2em;
     margin: 0.5em 0 0.25em;
-} 
+}
 
 .about-page .jobs-carousel-container {
     margin-bottom: 2em;
