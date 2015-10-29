@@ -1579,6 +1579,123 @@
         padding-top: 1em;
     }
 
+
+    /* ========================================================================= */
+    /* About page */
+
+    .about-header h1 {
+        font-size: 3.75em;
+    }
+
+    .about-header {
+        min-height: 620px;
+        margin: -8em 0 5em;
+        background-image: url('../images/about-header-new.jpg');
+    }
+
+    .about-header .content {
+        top: 15%;
+    }
+
+    .about-page h2 {
+        font-size: 3em;
+    }
+
+    .about-page p.intro {
+        font-size: 1.45em;
+    }
+
+    .specialisms li {
+        width: 45%;
+        margin: 0 9.5% 2em 0;
+        float: left;
+    }
+
+    .about-page .jobs-benefits h3 {
+        font-size: 3.25em;
+        margin: 1em 0 0.25em;
+        text-align: left;
+    } 
+
+    .clients-big li {
+        width: 25%;
+        height: 300px;
+    }
+
+    .clients-big li .client-logo {
+        height: 300px;
+        /* doesn't matter gets capped*/
+        width: 700px;
+    }
+    
+    .clients-big li img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .about-page .jobs-benefits {
+        margin-bottom: 3em;
+    }
+
+    .clients-holder {
+        padding: 9% 0 0;
+    }
+
+    .about-page h3 {
+        font-size: 3em;
+    }
+
+    .about-page .involved-in h3 {
+        font-size: 1.5em;
+    }
+
+    .about-page .action h3 {
+        font-size: 1.5em;
+    }
+
+    .about-page .specialisms h3 {
+        font-size: 1.5em;
+    }
+
+    .clients-big a:nth-child(5) li {
+        background: rgba(255,255,255, 0.04);
+    }
+
+    .clients-big a:nth-child(6) li, .clients-big a:nth-child(8) li {
+        background: transparent;
+    }
+
+    .clients-big a:nth-child(7) li {
+        background: rgba(255,255,255, 0.04);
+    }
+
+    .involved-in li {
+        width: 21.2%;
+        margin-right: 5%;
+    }
+
+    .involved-in li:last-of-type {
+        margin-right: 0;
+    }
+
+    .action li {
+        width: 40%;
+        float: left;
+        margin-right: 20%;
+    }
+
+    .call-to-action-bg {
+        -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
+        clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
+        padding: 7em 0 2em;
+        margin-top: -60px;
+    }
+
+    .action-holder {
+        text-align: center;
+        margin: 5em 0 2em;
+    }
+
     /*Footer*/
 
     footer .container {
@@ -2128,7 +2245,6 @@
     }
 
 }
-
 
 /* ==========================================================================
     STREAM FIELD STYLES

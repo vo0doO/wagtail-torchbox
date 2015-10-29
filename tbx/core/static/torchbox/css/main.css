@@ -981,33 +981,8 @@ main nav li.active a:after {
     opacity: 0.8;
 }
 
-.page-jobindexpage .button {
-    background-color: transparent;
-    display: inline-block;
-    padding: 0.8em 1em;
-    color: #fff;
-    border: solid 1px #f85a40;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    text-align: center;
-    font-size: 0.9em;
-    -o-transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
 .page-jobindexpage .intro p {
     clear: both;
-}
-
-.page-jobindexpage .button:hover {
-    background-color: rgba(255,255,255,0.1);
-    border: solid 1px #f3f4f6;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
 }
 
 .jobs-listing .listing a {
@@ -1224,13 +1199,6 @@ main nav li.active a:after {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     display: block;
-}
-
-.jobs-refer .button {
-    border: 1px solid #ffffff;
-    background: transparent;
-    margin: 0;
-    text-shadow: 0px 0px 25px rgba(0,0,0, 0.45);
 }
 
 .jobs-refer p {
@@ -2511,6 +2479,8 @@ footer {
     color: #fff;
     -webkit-font-smoothing: antialiased;
     clear: both;
+    position: relative;
+    z-index: 100;
 }
 
 footer .container {
@@ -3094,24 +3064,36 @@ h4 ~ .stat {
 
 /* header */
 
+.page-standardpage .menu-button {
+    background: #FD5938;
+}
+
 .page-standardpage .logo {
     background: url("../images/logo-torchbox-white.png") center left no-repeat;
     background-size: 13em;
+}
+
+.about-page .jobs-benefits {
+    margin-bottom: 1em;
+}
+
+.about-page .jobs-core-values ul {
+    padding: 0 1em;
 }
 
 .about-header {
     position: relative;
     display: block;
     overflow: hidden;
-    margin: -8em 0 5em;
+    margin: -19em 0 5em;
     color: white;
-    background-image: url('../images/job-page-about.jpg');
+    background-image: url('../images/about-header-new-sml.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     /**/
-    min-height: 621px;
+    min-height: 700px;
     text-align: center;
     z-index: 10;
+    background-size: cover;
 }
 
 .about-content-main {
@@ -3125,7 +3107,7 @@ h4 ~ .stat {
 }
 
 .about-header h1 {
-    font-size: 3.75em;
+    font-size: 2em;
     font-weight: bold;
     line-height: 1.1;
     margin: 0 0 30px;
@@ -3142,7 +3124,7 @@ h4 ~ .stat {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 15%;
+    top: 10%;
 }
 
 .about-header:after {
@@ -3171,7 +3153,7 @@ h4 ~ .stat {
 }
 
 .about-page h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.25em;
     color: #484848;
@@ -3179,7 +3161,7 @@ h4 ~ .stat {
 }
 
 .about-page h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.75em;
     color: #484848;
@@ -3190,7 +3172,7 @@ h4 ~ .stat {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 2em;
-    font-size: 1.45em;
+    font-size: 1.15em;
     line-height: 1.4;
 }
 
@@ -3201,9 +3183,7 @@ h4 ~ .stat {
 }
 
 .specialisms li {
-    width: 45%;
-    margin: 0 9.5% 2em 0;
-    float: left;
+    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -3270,9 +3250,9 @@ h4 ~ .stat {
 }
 
 .about-page .jobs-benefits h3 {
-    text-align: left;
-    font-size: 3.25em;
-    margin: 1em 0 0.25em;
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0 0.25em;
 } 
 
 .about-page .jobs-carousel-container {
@@ -3283,7 +3263,7 @@ h4 ~ .stat {
 
 .clients-holder {
     background: #434A4E;
-    padding: 9% 0 0;
+    padding: 20% 0 0;
     -webkit-clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(50% 7%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -3298,9 +3278,9 @@ h4 ~ .stat {
 
 .clients-big li {
     position: relative;
-    width: 25%;
+    width: 33%;
     float: left;
-    height: 300px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -3327,22 +3307,6 @@ h4 ~ .stat {
     height: 150%;
 }
 
-.clients-big a:nth-child(2n) li {
-    background: rgba(255,255,255, 0.04);
-}
-
-.clients-big a:nth-child(5) li {
-    background: rgba(255,255,255, 0.04);
-}
-
-.clients-big a:nth-child(6) li, .clients-big a:nth-child(8) li {
-    background: transparent;
-}
-
-.clients-big a:nth-child(7) li {
-    background: rgba(255,255,255, 0.04);
-}
-
 .clients-big li .client-logo {
     position: relative;
     z-index: 10;
@@ -3350,14 +3314,18 @@ h4 ~ .stat {
     vertical-align: middle;
     position: relative;
     text-align: center;
-    height: 300px;
+    height: 100px;
     /* doesn't matter gets capped*/
-    width: 700px;
+    width: 300px;
+}
+
+.clients-big a:nth-child(2n) li {
+    background: rgba(255,255,255, 0.04);
 }
 
 .clients-big li img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 /* involved */
@@ -3391,9 +3359,7 @@ h4 ~ .stat {
 }
 
 .involved-in li {
-    width: 21.2%;
     float: left;
-    margin-right: 5%;
     text-align: center;
 }
 
@@ -3421,15 +3387,15 @@ h4 ~ .stat {
 /* call to action */
 .call-to-action-bg {
     background: #F8F8F8;
-    -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
-    clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 9%);
-    padding: 7em 0 4em;
+    -webkit-clip-path: polygon(50% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(50% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
+    padding: 7em 0 1em;
     margin-top: -60px;
 }
 
 .action-holder {
     text-align: center;
-    margin: 5em 0 2em;
+    margin: 2em 0 0;
 }
 
 .action {
@@ -3451,10 +3417,8 @@ h4 ~ .stat {
 }
 
 .action li {
-    width: 40%;
-    float: left;
     text-align: center;
-    margin-right: 20%;
+    margin-bottom: 3em;
 }
 
 .action li:last-of-type {
