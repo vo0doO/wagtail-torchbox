@@ -1,0 +1,64 @@
+{% extends "torchbox/base.html" %}
+{% load compress wagtailcore_tags wagtailimages_tags humanize static torchbox_tags %}
+
+{% block body_class %}transparent-header{% endblock %}
+
+{% block content %}
+    <div class="page-banner crop-height about-header">
+        {% image self.header_background original as header_background %}
+        <div class="about-header-bg" {% if header_background %}style="background-image: url('{{ header_background.url }}')"{% endif %}>
+            <div class="about-header-content">
+                <h1>{{ self.header_content }}</h1>
+                <a href="mailto:{{ self.get_in_touch_email }}" class="button">Get in touch</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-body center">
+        {{ self.body|richtext }}
+    </div>
+
+    <h2 style="font-size: 60px;">TODO: Bespoke Solutions, Digital Marketing</h2>
+    <h2 style="font-size: 60px;">TODO: Design and animation, UX</h2>
+
+    {% include 'torchbox/includes/our_offices.html' %}
+    {% include 'torchbox/includes/our_core_values.html' %}
+
+
+    {% if self.our_history.all %}
+    <section class="about-our-history">
+        <div class="center">
+            <h2>Our history in {{ self.our_history.count|apnumber }}</h2>
+        </div>
+        <div class="jobs-carousel-container">
+            <ul class="jobs-carousel">
+                {% for history in self.our_history.all %}
+                    <li>
+                        {% image history.image original %}
+                        <div class="slide-caption-container">
+                            <div>
+                                <span class="reason-no">#{{ forloop.counter }}</span>
+                                <h3>{{ history.title }}</h3>
+                                <p>{{ history.body }}</p>
+                            </div>
+                        </div>
+                    </li>
+                 {% endfor %}
+            </ul>
+        </div>
+    </section>
+    {% endif %}
+
+    <h2 style="font-size: 60px;">TODO: Things we’re involved in</h2>
+    <h2 style="font-size: 60px;">TODO: clients</h2>
+    <h2 style="font-size: 60px;">TODO: new footer</h2>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'torchbox/js/vendor/jquery.matchHeight-min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'torchbox/js/vendor/slick/slick.min.js' %}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'torchbox/js/vendor/slick/slick.css' %}"/>
+    {% compress js %}
+        <script src="{% static 'torchbox/js/jobs.js' %}"></script>
+    {% endcompress %}
+{% endblock %}

@@ -81,6 +81,22 @@
         margin: 0;
     }
 
+    /* Overrides for transparent header */
+
+    .transparent-header .logo {
+        background: url("../images/logo-torchbox-white.png") center left no-repeat;
+        background-size: auto 3em;
+        padding: 1em 0;
+    }
+
+    .transparent-header header {
+        margin-bottom: inherit;
+    }
+
+    .transparent-header .bleed {
+        background: transparent; // this might be in more places
+    }
+
     /*Active*/
 
     .active {
@@ -753,6 +769,7 @@
         bottom: 0;
     }
 
+    .about-body h2,
     .jobs-core-values h2 {
         font-size: 3.6em;
     }
@@ -1045,20 +1062,6 @@
         background-image: url("../images/icons/salary.png");
     }
 
-    .page-jobindexpage .logo {
-        background: url("../images/logo-torchbox-white.png") center left no-repeat;
-        background-size: auto 3em;
-        padding: 1em 0;
-    }
-
-    .page-jobindexpage header {
-        margin-bottom: inherit;
-    }
-
-    .page-jobindexpage .bleed {
-        background: transparent; // this might be in more places
-    }
-
     .page-jobindexpage .intro p {
         font-size: 1.1em;
         padding-top: 1em;
@@ -1140,7 +1143,7 @@
 
     .jobs-listing h2 {
         margin-bottom: 1.5em;
-        font-size: 2.6em;
+        font-size: 3.6em;
     }
 
     .jobs-listing .listing li:nth-child(2n + 2) {
@@ -1523,6 +1526,48 @@
     .page-blogpage .prev {
         left: 0;
         top: 6em;
+    }
+
+    /* About page */
+
+    .page-aboutindexpage .center {
+        max-width: 96em;
+        margin: 0 auto;
+        padding: 0 4em;
+        overflow: visible;
+    }
+
+    .about-body p {
+        font-size: 1.5em;
+    }
+
+    .page-aboutindexpage .button {
+        font-size: 1em;
+    }
+
+    .page-aboutindexpage .crop-height {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 3em;
+        -webkit-clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+        clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    }
+    .about-header-content {
+        max-width: 70em;
+        margin-left: auto;
+        margin-right: auto;
+        color: #ffffff;
+        padding: 11em 0 10em 0;
+        text-align: center;
+    }
+
+    .about-header h1 {
+        text-shadow: 0 0 0.25em rgba(0,0,0,0.8);
+        font-size: 3.75em;
+    }
+
+    .about-our-history h2 {
+        font-size: 3.6em;
     }
 
     /*T shirts*/

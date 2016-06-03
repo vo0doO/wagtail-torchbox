@@ -660,6 +660,48 @@ class JobIndexPage(Page):
     ]
 
 
+# About page
+class OurHistory(Orderable):
+    page = ParentalKey('torchbox.AboutIndexPage', related_name='our_history')
+    image = models.ForeignKey(
+        'torchbox.TorchboxImage',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
+    title = models.CharField(max_length=255)
+    body = models.CharField(max_length=511)
+
+    panels = [
+        ImageChooserPanel('image'),
+        FieldPanel('title'),
+        FieldPanel('body')
+    ]
+
+
+class AboutIndexPage(Page):
+    header_content = models.TextField()
+    header_background = models.ForeignKey(
+        'torchbox.TorchboxImage',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
+    get_in_touch_email = models.EmailField()
+    body = RichTextField()
+
+    content_panels = [
+        FieldPanel('title', classname='full title'),
+        FieldPanel('header_content', classname='full'),
+        ImageChooserPanel('header_background'),
+        FieldPanel('get_in_touch_email', classname='full'),
+        FieldPanel('body', classname='full'),
+        InlinePanel('our_history', label='Our history'),
+    ]
+
+
 # Work page
 class WorkPageTagSelect(Orderable):
     page = ParentalKey('torchbox.WorkPage', related_name='tags')

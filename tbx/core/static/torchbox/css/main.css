@@ -466,6 +466,23 @@ main nav li.active a:after {
     width: 25%;
 }
 
+/* Overrides for transparent header */
+
+.transparent-header .logo {
+    background: url("../images/logo-torchbox-white.png");
+    background-size: auto 2em;
+    width: 14em;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1em;
+}
+
+.transparent-header header {
+    margin-bottom: 2em;
+    position: absolute;
+    width: 100%;
+}
+
 /*Page home*/
 
 .arrow {
@@ -874,15 +891,6 @@ main nav li.active a:after {
 
 /*Jobs index*/
 
-.page-jobindexpage .logo {
-    background: url("../images/logo-torchbox-white.png");
-    background-size: auto 2em;
-    width: 14em;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 1em;
-}
-
 .sign-up {
     clear: both;
     width: 100%;
@@ -914,12 +922,6 @@ main nav li.active a:after {
     margin: 18px;
     padding: 0.6em 1em;
     font-size: 0.9em;
-}
-
-.page-jobindexpage header {
-    margin-bottom: 2em;
-    position: absolute;
-    width: 100%;
 }
 
 .page-jobindexpage main .jobs {
@@ -1060,6 +1062,7 @@ main nav li.active a:after {
     border-color: #f85a40;
 }
 
+.about-body h2,
 .jobs-listing h2,
 .jobs-refer h2,
 .jobs-offices h2,
@@ -1074,7 +1077,6 @@ main nav li.active a:after {
 
 .jobs-listing h2 {
     margin-bottom: 1em;
-    font-size: 2em;
 }
 
 .jobs-benefits h3 {
@@ -1090,6 +1092,7 @@ main nav li.active a:after {
     text-align: center;
 }
 
+.about-body h2,
 .jobs-core-values h2,
 .jobs-offices h2,
 .jobs-what-saying h2,
@@ -1156,6 +1159,7 @@ main nav li.active a:after {
     margin-right: 0;
 }
 
+.about-body h2,
 .jobs-core-values h2 {
     font-weight: bold;
     font-size: 2em;
@@ -2870,6 +2874,113 @@ footer img {
 .form iframe {
     height: 1300px !important;
 }
+
+/* About page */
+
+.page-aboutindexpage h1 {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.about-header-content {
+    position: relative;
+    padding: 9em 0.5em 5em;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.about-header .button.button {
+    box-shadow: 0 0 1.25em rgba(72, 72, 72, 0.5);
+    margin: 1.2em;
+    padding: 0.6em 1em;
+    font-size: 0.9em;
+}
+
+.page-aboutindexpage .button {
+    background-color: #f85a40;
+    display: inline-block;
+    padding: 0.8em 1em;
+    color: #fff;
+    border: 1px solid #f85a40;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 0.9em;
+    -o-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.page-aboutindexpage .button:hover {
+    background-color: #2EB1B0;
+    border-color: #2EB1B0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.about-header {
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 3em;
+}
+
+.page-aboutindexpage .crop-height {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+}
+
+.about-header-bg {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../images/about_header_bg_default.png');
+}
+
+.about-header-bg:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 72, 72, 0.5);
+    display: block;
+}
+
+.about-body p {
+    margin-top: 1em;
+    max-width: 35em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-aboutindexpage p a {
+    -o-transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    border-bottom: 1px dotted #424A4F;
+}
+
+.page-aboutindexpage p a:hover {
+    color: #FD5938;
+    border-bottom: 1px dotted #FD5938;
+}
+
+.about-our-history h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
 
 /* ==========================================================================
     STREAM FIELD STYLES

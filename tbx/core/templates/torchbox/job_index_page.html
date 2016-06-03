@@ -1,12 +1,14 @@
 {% extends "torchbox/base.html" %}
 {% load compress wagtailcore_tags wagtailimages_tags humanize static torchbox_tags %}
 
+{% block body_class %}transparent-header{% endblock %}
+
 {% block content %}
     <div class="page-banner crop-height jobs-header">
         <div class="img-darken">
             <div class="jobs-header-content">
                 <h1>Work with us</h1>
-                <p>We design and build beautiful websites and robust, scalable custom applications for some of the world's great universities and academic institutions, globally-renowned think tanks, high profile charities and NGOs, and other organisations seeking to have a positive impact.
+                <p>We design and build beautiful websites and robust, scalable custom applications for some of the world's great universities and academic institutions, globally-renowned think tanks, high profile charities and NGOs, and other organisations seeking to have a positive impact.</p>
                 <a href="#reasons" class="button">Reasons to join us</a>
             </div>
         </div>
@@ -63,47 +65,10 @@
         </div>
     </section>
     {% endif %}
-    <section class="jobs-offices">
-        <div class="center our-offices-container">
-            <h2>Our offices</h2>
-            <ul class="our-offices">
-                <li class="cotswolds first">
-                    <img src="{% static "torchbox/images/icons/cotswolds.svg" %}" />
-                    <h3>In the glorious Cotswolds</h3>
-                    <p>Have lunch by the river at our head office in a beautiful Oxfordshire deer park, or take long walks along the river.</p>
-                </li>
-                <li class="bristol">
-                    <img src="{% static "torchbox/images/icons/bristol.svg" %}" />
-                    <h3>The vibrant centre of Bristol</h3>
-                    <p>Go out with the team to try the endless supply of real ales, or try the abundance of street food and sit in the vibrant parks.</p>
-                </li>
-                <li class="philadelphia last">
-                    <img src="{% static "torchbox/images/icons/philadelphia.svg" %}" />
-                    <h3>Historic Philadelphia</h3>
-                    <p>Soak up the historic Old City, kick back in a bar on South Street, or head to Passyunk square for an original cheese-steak.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="jobs-core-values clearfix">
-        <div class="center">
-            <h2>Our four core values</h2>
-            <ul class="image-tiles">
-                <li>
-                    <img src="{% static "torchbox/images/corevalue-better.jpg" %}" alt="Make things better" />
-                </li>
-                <li>
-                    <img src="{% static "torchbox/images/corevalue-happy.jpg" %}" alt="Make clients happy" />
-                </li>
-                <li>
-                    <img src="{% static "torchbox/images/corevalue-never.jpg" %}" alt="Never stand still" />
-                </li>
-                <li>
-                    <img src="{% static "torchbox/images/corevalue-enjoy.jpg" %}" alt="Enjoy it" />
-                </li>
-            </ul>
-        </div>
-    </section>
+
+    {% include 'torchbox/includes/our_offices.html' %}
+    {% include 'torchbox/includes/our_core_values.html' %}
+
     <section class="jobs-refer">
         <div class="center space-footer">
             <h2>Refer a friend and make £500</h2>

@@ -215,4 +215,9 @@
     .page-signupformpage footer.thanks  {
         padding: 0;
     }
+
+    /* About page */
+    .about-header-content {
+        padding-top: 10em;
+    }
 }
