@@ -126,18 +126,15 @@
         display: inline-block;
         vertical-align: top;
         width: 100%;
+        margin-top: 12px;
         margin-bottom: 20px;
-
-        img {
-            width: 100%;
-            margin-top: 12px;
-        }
     }
 
 
     &__name {
         font-size: 25px;
         font-weight: 400;
+        line-height: inherit;
         color: #222;
     }
 
@@ -146,6 +143,7 @@
         font-weight: 400;
         color: $services-blue;
         text-transform: uppercase;
+
     }
 
     &__description {
