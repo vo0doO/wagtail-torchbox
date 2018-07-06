@@ -34,6 +34,15 @@ install:
   - pip install isort
 
 script:
+  # Code style, missing imports, etc
   - flake8 tbx
   - isort --check-only --diff --recursive tbx
+
+  # Run system checks
   - python manage.py check
+
+  # Check for missing migrations
+  - python manage.py makemigrations --check
+
+  # Run tests
+  - python manage.py test
